@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Table Calculate Basic Salary </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div id="table"> 
+        <h3>INPUT INFORMATION</h3>
+        <div id="input-field">
+            <label for="ordinal">Ordinal:</label>
+            <input type="number" name="ordinal" id="ordinal">
+        </div>
+        <div id="input-field">
+            <label for="fullName">FullName:</label>
+            <input type="text" name="fullname" id="fullname" required>
+        </div>
+        <div id="input-field">
+            <label for="basicsalary">Basic Salary:</label>
+            <input type="text" name="basicsalary" id="basicsalary">
+        </div>
+        <div id="input-field">
+            <label for="office">Office:</label>
+            <input type="text" name="office" id="office">
+        </div>
+        <div id="input-field">
+            <label for="senior">Senior:</label>
+            <input type="text" name="senior" id="senior">
+        </div>
+        <div id="input-field">
+            <label for="allowance">Allowance of service:</label>
+            <input type="text" name="allowance" id="allowance">
+        </div>
+        <div id="input-field">
+            <label for="insurance">Society insurance:</label>
+            <input type="text" name="insurance" id="insurance">
+        </div>
+        <div id="input-field">
+            <label for="salarytotal">Salary total:</label>
+            <input type="text" name="salarytotal" id="salarytotal">
+        </div>
+        <div id="input-field">
+            <label for="total">Salary total received:</label>
+            <input type="text" name="total" id="total">
+        </div>
+        <div>
+            <button onclick="add()">Submit</button>
+        </div>
+    </div>
+    <table id="render">
+        <thead>
+            <tr>
+                <th>Ordinal</th>
+                <th>Full Name</th>
+                <th>Basic Salary</th>
+                <th>Office</th>
+                <th>Sernior</th>
+                <th>Service Allowance</th>
+                <th>Society Insurance</th>
+                <th>Salary Total</th>
+                <th>Salary Total Received</th>
+            </tr>
+        </thead>
+    </table>
+
+    <script src="index.js"></script>    
+</body>
+</html>
